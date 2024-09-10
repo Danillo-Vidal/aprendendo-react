@@ -1,17 +1,15 @@
+//index.js é o ponto de entrada para o seu aplicativo React. 
+//É aqui que você configura e renderiza o componente principal do seu aplicativo
+
+
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from 'react-dom';//ReactDOM é utilizado para renderizar o seu componente React na página HTML
+import App from './App';//App é o componente principal do seu aplicativo, e é o que precisa ser exibido na tela
+import './App.css'; 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(
+    <React.StrictMode>
+      <App />  
+    </React.StrictMode>,
+    document.getElementById('root') // Renderiza o componente App no elemento com id root
+  );
